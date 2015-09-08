@@ -21,7 +21,7 @@ def cPrint(str):
     print convert(str)
 
 def printHelp():
-    print "help"
+    print u"[q]:退出 [F]:显示所有板块 [F {id} {page}]:显示指定板块的指定页 [t {id} {page}]:显示指定串指定页 [f]:前进历史记录 [b]:后退历史记录 [p]:前一页 [n]:后一页"
     
 def printForum():
     forumListStr = ""
