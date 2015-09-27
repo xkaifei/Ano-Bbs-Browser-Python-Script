@@ -202,12 +202,14 @@ def mainLoop():
         input = raw_input() 
     
 def main():
+    print u"正在初始化，请稍等"
     forumBigList = getJsonFromUrl(baseUrl + "/getForumList")
     #forumBigList = [{"forums":[{"name":"test", "id":"1"},{"name":"test1", "id":"2"}]}]
     for forums in forumBigList:
         for forum in forums['forums']:
             forumList.append((forum["name"], forum["id"]))
-    print "start!"
+    print "初始化成功!"
+    printHelp()
     mainLoop()
 
 if __name__ == '__main__':
